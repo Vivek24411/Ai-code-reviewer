@@ -13,7 +13,7 @@ function Coding(){
     const [review,setReview] = useState('')
     
     async function reviewByAI(){
-            const response = await axios.post(`${import.meta.env.VITE_BASE_URI}/code/codeReview`,{
+            const response = await axios.post(`https://ai-code-reviewer-backend-3w34.onrender.com/code/codeReview`,{
                 code
             })
             if(response.status === 200){
